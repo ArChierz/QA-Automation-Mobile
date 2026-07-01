@@ -1,3 +1,5 @@
+# Mobile Automation Testing with WebdriverIO and Appium on Swag Lab Mobile App
+
 # HOW TO RUN
 
 ## Run Appium In External Cmd
