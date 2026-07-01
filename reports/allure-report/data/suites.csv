@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","14735","should fail login with invalid password","Swag Lab App - Login Functionality","2026-07-01","passed","2026-07-01","","Login - Negative Test","",""
+"","14401","should login successsfully with valid credentials","Swag Lab App - Login Functionality","2026-07-01","passed","2026-07-01","","Login - Positive Test","",""
+"","35047","should successfully logout from the app","Swag Lab App - Product Functionality","2026-07-01","passed","2026-07-01","","Logout - Positive Test","",""
+"","39524","should successfully cancel sorting","Swag Lab App - Product Functionality","2026-07-01","passed","2026-07-01","","Sorting - Positive Test","",""

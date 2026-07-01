@@ -45,7 +45,7 @@ export const config = {
     // from the same test should run tests.
     //
     // max process will run -> best for parallel pproc
-    maxInstances: 10,
+    maxInstances: 1,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -136,7 +136,17 @@ export const config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: [
+        'spec', 
+        ['allure', 
+            {
+                outputDir: './reports/allure-results',
+                disableWebdriverStepsReporting: true,
+                disableWebdriverScreenshotsReporting: false,
+                useCucumberStepReporter: false
+            }
+        ]
+    ],
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/

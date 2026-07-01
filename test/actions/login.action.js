@@ -1,5 +1,6 @@
 // const { default: loginPage } = require("../pageobjects/login.page");
 import loginPage from "../pageobjects/login.page.js";
+import productAction from "./product.action.js";
 class LoginAction{
 
     async enterUsername(username){
@@ -21,6 +22,11 @@ class LoginAction{
         await this.enterUsername(username);
         await this.enterPassword(password);
         await this.tapLoginButton();
+
+        if(!this.loginErrorMessage()){
+            await productAction.hasProductTitle();        
+
+        }
     }
 
     async hasLoginTitle(){
